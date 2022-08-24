@@ -1,3 +1,10 @@
+<script>
+	import Img from './image.jpg?webp&meta'
+	import src from './image.jpg'
+</script>
+
+
+
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="About this app" />
@@ -5,6 +12,12 @@
 
 <div class="content">
 	<h1>About this app</h1>
+
+	{Img.src}
+	
+	<hr>
+
+	{src}
 
 	<p>
 		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
